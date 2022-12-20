@@ -4,6 +4,7 @@ import Navigation from "./component/navigation"
 import BackgroundDescription from "./component/description"
 import Search from "./component/search"
 import Category from "./component/category"
+import axios from 'axios'
 
 
 function Movie() {
@@ -13,7 +14,7 @@ function Movie() {
 
   useEffect(() => {
     let loadMovies = async () => {
-      let response = await fetch(`http://www.omdbapi.com/?s=${query}&apikey=399dc488`)
+      let response = await axios.get(`http://www.omdbapi.com/?s=${query}&apikey=399dc488`)
       let refinedResponse = await response.json()
       if (refinedResponse.Response === 'True') {
         setMovies(refinedResponse.Search)

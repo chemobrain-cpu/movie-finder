@@ -3,7 +3,7 @@
 /* styling the image background */
 
 .imageBackground {
-    height:70vh;
+    height:60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

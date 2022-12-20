@@ -7,6 +7,7 @@
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
+    "axios": "^1.2.1",
     "moment": "^2.29.3",
     "moment-timezone": "^0.5.34",
     "node-fetch": "^3.3.0",

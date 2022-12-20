@@ -1,0 +1,22 @@
+
+/*  search section */
+
+.searchSection {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px
+}
+
+.searchSection h2 {
+    font-size: 1.3rem;
+    margin-bottom: 5px
+}
+
+.searchSection input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding:10px;
+    font-size:1.2rem
+}

@@ -1,0 +1,60 @@
+
+/* Video sections*/
+
+.videoSection {
+    margin-left: 5%;
+    margin-bottom:30px
+}
+
+.videoSection h2 {
+    margin-bottom: 5px
+}
+
+.videoSection .cardSection {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display:flex;
+    overflow-x: auto;
+
+}
+
+.videoSection .cardSection::-webkit-scrollbar{
+    width:0
+}
+
+.videoSection .cardSection .card{
+    height:260px;
+    min-width:250px;
+    background-color:black;
+    margin-right:10px;
+    border-radius: 5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    overflow: hidden;
+   
+}
+
+.videoSection .cardSection .card img{
+    width:100%;
+    height:100%;
+   
+}
+.videoSection .cardSection .description{
+  width:100%;
+   position:absolute;
+   bottom:40%;
+   background:rgba(27,27,27,.8);
+   
+
+}
+
+.videoSection .cardSection .card h2{
+    color:white;
+    text-align: center;
+    width:80%
+}
+
+
+

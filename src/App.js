@@ -13,7 +13,7 @@ function Movie() {
 
   useEffect(() => {
     let loadMovies = async () => {
-      let response = await fetch(`http://www.omdbapi.com/?s=${query}&apikey=399dc488`)
+      let response = await fetch(`https://www.omdbapi.com/?s=${query}&apikey=399dc488`)
       let refinedResponse = await response.json()
       if (refinedResponse.Response === 'True') {
         setMovies(refinedResponse.Search)
@@ -30,7 +30,7 @@ function Movie() {
   let filter = (val) => {
     let loadMovies = async () => {
       val.replace("\\s", '%20')
-      let response = await fetch(`http://www.omdbapi.com/?s=${val}&apikey=399dc488`)
+      let response = await fetch(`https://www.omdbapi.com/?s=${val}&apikey=399dc488`)
       let refinedResponse = await response.json()
       if (refinedResponse.Response === 'True') {
         setMovies(refinedResponse.Search)
